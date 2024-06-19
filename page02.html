@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+    </style> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="center-text">
+        <h1>🐈‍⬛승질:<br>마딛다 ㅋㅋ<br>근데 이름이 뭐새요<br><br></h1>
+    </div>
+
+    <div class="form-container">
+        <form id="myForm" onsubmit="handleSubmit(event)">
+            <input type="text" id="inputText" placeholder="이름" style="width: 260px; height: 55px;">
+            <button type="submit">글쿤</button>
+        </form>
+    </div>
+
+    <div class="ss02">
+        <img src="ss02.png" width="352" height="375">
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // 폼 기본 제출 동작 방지
+
+            // 입력된 문자열 가져오기
+            var input = document.getElementById('inputText').value.trim();
+
+            // 입력값이 비어있는지 확인
+            if (input === '') {
+                alert('이름이 뭐냐고!!!!!');
+                return; // 함수 종료
+            }
+
+            // 입력된 문자열을 page03.html로 전달하며 이동
+            window.location.href = 'page03.html?input=' + encodeURIComponent(input);
+        }
+    </script>
+</body>
+
+</html>

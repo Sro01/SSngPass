@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko" class="page03">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 03</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+    </style> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="ss03-1">
+        <img src="ss03-1.png" width="250" height="250" class="rotate-animation">
+    </div>
+
+    <div class="center-center-text">
+        <p>
+            🐈‍⬛승질:<br>
+            저에게 츄르를 준<br>
+            <span id="displayText"></span> 웅니,,,<br>
+            당신은 무.조.껀<br>
+            <span class="pass-text">!!합격!!</span>이새요
+
+        </p>
+    </div>
+
+    <div class="ss03-2">
+        <img src="ss03-2.png" width="250" height="250" class="rotate-animation">
+    </div>
+
+    <script>
+        // URL에서 입력된 문자열 가져오기
+        var urlParams = new URLSearchParams(window.location.search);
+        var input = urlParams.get('input');
+
+        // 가져온 문자열을 화면에 출력
+        var displayTextElement = document.getElementById('displayText');
+        displayTextElement.textContent = input;
+    </script>
+</body>
+
+</html>
