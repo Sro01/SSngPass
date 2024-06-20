@@ -114,6 +114,7 @@ button[type="submit"] {
     top: 20px;
     width: 100%;
     text-align: center;
+    z-index: 0;
     /* 수평 가운데 정렬 */
 }
 
@@ -122,6 +123,7 @@ button[type="submit"] {
     bottom: 20px;
     width: 100%;
     text-align: center;
+    z-index: 0;
     /* 수평 가운데 정렬 */
 }
 
