@@ -1,7 +1,18 @@
+@font-face {
+    font-family: 'ChosunGs';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/ChosunGs/ChosunGs.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/ChosunGs/ChosunGs.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/ChosunGs/ChosunGs.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/ChosunGs/ChosunGs.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/ChosunGs/ChosunGs.ttf') format("truetype");
+    font-display: swap;
+}
+
 html {
     /* font-family: 'NanumGothic', sans-serif; */
-    /* font-family: "Single Day"; */
-    font-family: '궁서체';
+    font-family: 'ChosunGs';
     background-color: #ffffe0;
     margin: 0;
     padding: 0;
@@ -65,12 +76,12 @@ body {
     width: 260px;
     height: 55px;
     margin-bottom: 10px;
-    font-family: '궁서체';
+    font-family: 'ChosunGs';
     /* 입력란과 버튼 사이의 간격 조정 */
 }
 
 button[type="submit"] {
-    font-family: '궁서체';
+    font-family: 'ChosunGs';
     width: 100px;
     /* 전송 버튼의 너비 설정 */
     height: 40px;
