@@ -134,6 +134,7 @@ button[type="submit"] {
     height: 100vh;
     font-size: 24px;
     font-weight: bold;
+    z-index: 100;
     /* 화면 전체 높이에 대해 수직 가운데 정렬 */
 }
 
